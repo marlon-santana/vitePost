@@ -1,6 +1,6 @@
 import { AssideBar } from "./component/AssideBar";
 import { Header } from "./component/Header";
-import { Post } from "./Post";
+import { Post } from "./component/Post";
 import "./global.css";
 import  styles from './app.module.css';
 
@@ -14,14 +14,9 @@ export function App() {
        <AssideBar/>
 
         <main>
-          <Post 
-          author='marlon santana'
-          content='lorem mabkjbajkcbkcbçiubciuwbeibwhbwkehcbwebciuwebciwebciuwebvuewbv  jkbcievcihevbihwevb  fkejbiuebiwebifuwebifbeiwfbiewyfbiywe  ekbhwefhehv'
-          />
-          <Post 
-           author='marlon santana'
-           content='lorem mabkjbajkcbkcbçiubciuwbeibwhbwkehcbwebciuwebciwebciuwebvuewbv  jkbcievcihevbihwevb  fkejbiuebiwebifuwebifbeiwfbiewyfbiywe  ekbhwefhehv'
-          />
+          <Post/>
+          <Post/>
+          <Post/>
         </main>
       </div>
     </div>
