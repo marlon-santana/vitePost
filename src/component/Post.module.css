@@ -131,7 +131,7 @@ header {
     color: var(--gray-100);
     resize: none;
     margin-left:3rem;
-    border: 1px solid #00B37E;
+    border: none;
   }
   
   .commentForm footer {

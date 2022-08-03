@@ -33,7 +33,9 @@ export function Post() {
                 <textarea
                 placeholder='Deixe um comentário'
                 />
+                <footer>
                   <button type='submit'>Comentar</button>
+                </footer>
             </form>
           
       
