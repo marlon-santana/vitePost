@@ -1,6 +1,7 @@
 import styles from './assideBar.module.css';
 
 
+
 export function AssideBar() {
   return ( 
 
@@ -10,7 +11,9 @@ export function AssideBar() {
     <h1>Marlon Santana</h1>
     <p>Desenvolvedor</p>
     <section></section>
-    <button>Editar perfil</button>
+    <button>
+      Editar perfil
+      </button>
   
   </aside>
 
