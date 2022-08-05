@@ -18,9 +18,12 @@ export function Comment() {
                             Delete
                         </button>  
                     </header>
+                    <p>Muito bom dev, parabéns</p>
 
                 </div>
-
+                    <footer>
+                        Aplaudir
+                    </footer>
              </div>
 
         </div>    
