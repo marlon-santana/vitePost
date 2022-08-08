@@ -4,7 +4,7 @@ import styles from './comment.module.css';
 export function Comment() {
     return (
         <div className={styles.comment}>
-             <img  src='https://avatars.githubusercontent.com/u/72947608?v=4'/>
+             <img src='https://avatars.githubusercontent.com/u/72947608?v=4'/>
 
              <div className={styles.commentBox}>
                 <div className={styles.commentContent}>
@@ -22,7 +22,10 @@ export function Comment() {
 
                 </div>
                     <footer>
-                        Aplaudir
+                        <button>
+                        Aplaudir <span>20</span>
+                        </button>
+                       
                     </footer>
              </div>
 

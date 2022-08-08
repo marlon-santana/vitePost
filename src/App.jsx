@@ -1,5 +1,4 @@
 import { AssideBar } from "./component/AssideBar";
-import { Comment } from "./component/Comment";
 import { Header } from "./component/Header";
 import { Post } from "./component/Post";
 import "./global.css";
@@ -17,7 +16,6 @@ export function App() {
         <main>
           <Post/>
           <Post/>
-          <Comment/>
         </main>
       </div>
     </div>

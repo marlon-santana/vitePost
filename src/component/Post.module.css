@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 52rem;
-    height: 39rem;
+    min-height: 39rem;
     background: #202024;
     border-radius: 8px;
     
