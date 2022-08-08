@@ -1,4 +1,5 @@
 import styles from './assideBar.module.css';
+import { Avatar } from './Avatar';
 
 
 
@@ -7,7 +8,7 @@ export function AssideBar() {
 
   <aside className={styles.asside}>
     <div className='timeline'></div>
-    <img  src='https://avatars.githubusercontent.com/u/72947608?v=4'/>
+      <img hasBorder src='https://avatars.githubusercontent.com/u/72947608?v=4'/>
     <h1>Marlon Santana</h1>
     <p>Desenvolvedor</p>
     <section></section>
