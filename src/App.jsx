@@ -9,8 +9,25 @@ const post = [
   {
     id: 1,
     author: {
-      avatarUrl: 'https://github.com/marlon-santana.png',
-      name: 'Marlon Santana',
+      avatarUrl: 'https://github.com/maykbrito.png',
+      name: 'Maikao',
+      role: 'front-end develop',
+    },
+    content: [
+      {type: 'paragraph',content:'Fala galeraa 👋'},
+      {type: 'paragraph',content:'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da'},
+      {type: 'paragraph',content:'Rocketseat. O nome do projeto é DoctorCare 🚀'},
+      {type: 'link',content:'marlon.dev/doctorcare'},
+      {type: 'hash',content:'#Rocketseat'},
+    ],
+    publishedAt: new Date('2022-08-11 21:17:00')
+                
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: 'https://github.com/diego3g.png',
+      name: 'Diego Fernandes',
       role: 'front-end develop',
     },
     content: [
@@ -19,9 +36,10 @@ const post = [
       {type: 'paragraph',content:'Rocketseat. O nome do projeto é DoctorCare 🚀'},
       {type: 'link',content:'marlon.dev/doctorcare'},
     ],
-    publishedAt: new Date('2022-08-11 21:17:00')
+    publishedAt: new Date('2022-08-09 21:17:00')
                 
   }
+
 ]
 
 export function App() {
@@ -33,8 +51,18 @@ export function App() {
        <AssideBar/>
 
         <main>
-          <Post/>
-          <Post/>
+          {
+            post.map(post => {
+              return (
+                <Post
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+                />
+              )
+            })
+          }
+          
         </main>
       </div>
     </div>
