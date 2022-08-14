@@ -7,11 +7,10 @@ import { useState } from 'react';
 
 export function Post({author, content, publishedAt}) {
     const [comments, setComments] = useState([
-        1,
-        2,
-        3,
+        'olá dev, ficou show!'
       ]);
 
+      const [ newCommentText, setNewCommentText ] = useState('');
 
     const publishedAtFormated = new Intl.DateTimeFormat('pt-BR', {
         day:'2-digit',
