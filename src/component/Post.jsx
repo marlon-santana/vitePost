@@ -26,6 +26,13 @@ export function Post({ author, content, publishedAt }) {
     setNewCommentText(event.target.value);
   }
 
+    function handleDeleteComment(comment) {
+      const commentsFilter = comments.filter(filterComments => {
+        return filterComments != comment
+      })
+      setComments(commentsFilter)
+    }
+
   return (
     <article className={styles.article}>
       <header>
@@ -69,7 +76,7 @@ export function Post({ author, content, publishedAt }) {
         </footer>
       </form>
       {comments.map((comment) => {
-        return <Comment key={comment} content={comment} />;
+        return <Comment key={comment} onHandleDeleteComment={handleDeleteComment} content={comment} />;
       })}
     </article>
   );
