@@ -33,6 +33,7 @@ export function Post({ author, content, publishedAt }) {
       setComments(commentsFilter)
     }
 
+    const isNewCommentEmpty = newCommentText.length === 0;
   return (
     <article className={styles.article}>
       <header>
@@ -72,7 +73,7 @@ export function Post({ author, content, publishedAt }) {
           onChange={handleNewcommentChange}
         />
         <footer>
-          <button type="submit">Comentar</button>
+          <button type="submit" disabled={isNewCommentEmpty  }>Comentar</button>
         </footer>
       </form>
       {comments.map((comment) => {
