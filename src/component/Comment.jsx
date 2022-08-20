@@ -12,7 +12,8 @@ export function Comment({content, onHandleDeleteComment}) {
         }
 
         function AddLike() {
-            setLike( like + 1)
+            setLike((old) => old + 1)
+           
         }
     
     return (
