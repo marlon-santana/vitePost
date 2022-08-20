@@ -1,11 +1,18 @@
+import { useState } from 'react';
 import { Avatar } from './Avatar';
 import styles from './comment.module.css';
 
 
 export function Comment({content, onHandleDeleteComment}) {
 
+    const [like, setLike ] = useState(0);
+
         function deleteComment() {
             onHandleDeleteComment(content)
+        }
+
+        function AddLike() {
+            setLike( like + 1)
         }
     
     return (
@@ -28,8 +35,8 @@ export function Comment({content, onHandleDeleteComment}) {
 
                 </div>
                     <footer>
-                        <button>
-                        Aplaudir <span>20</span>
+                        <button onClick={AddLike}>
+                        Aplaudir <span>{like}</span>
                         </button>
                        
                     </footer>
