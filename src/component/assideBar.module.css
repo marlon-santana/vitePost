@@ -1,0 +1,70 @@
+.asside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:#202024;
+    border-radius: 8px;
+    width:256px;
+    height:294px;
+    border-radius: 8px;
+}
+.asside img {
+    box-sizing: initial;
+    width: 55px;
+    height: 55px;
+    border: 4px solid var(--gray-800);
+    margin-top: -30px;
+    background: white;
+    border-radius: 5px;
+    outline: 2px solid #00B37E;
+  
+}
+
+.asside div {
+    width: 256px;
+    height: 72px;
+    background-image: url('../assets/fundo-folha.jpg');
+    border-radius: 5px 5px 0px 0px;
+}
+.asside h1 {
+    
+    font-size: 1rem;
+    font-Weight: 44rem;
+    margin-top: 1rem;
+    Line-height: 22px;
+}
+.asside p {
+    font-size: 14px;
+    font-Weight: 400;
+    Line-height: 22px;
+    color: #8D8D99;
+}
+.asside section {
+    width:256px;
+    height:0;
+    border: 1px solid #323238;
+    margin-top: 24px;
+}
+
+.asside button {
+    width: 192px;
+    height: 50px;
+    background-color:transparent;
+    margin-top: 24px;
+    border: 2px solid #00B37E;
+    border-radius: 8px;
+    color: #00B37E;
+}
+
+.asside button:hover{
+background: #00875F;
+color:white;
+transiction: color 0.2s, background-color 0.2s;
+}
+
+@media (max-width: 768px) {
+    .asside {
+        width:100%;
+    }
+  }
