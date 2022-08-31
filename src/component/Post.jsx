@@ -3,6 +3,8 @@ import { Comment } from "./Comment";
 import { Avatar } from "./Avatar";
 import { useState } from "react";
 
+
+
 export function Post({ author, content, publishedAt }) {
   const [comments, setComments] = useState(["olá dev, ficou show!"]);
 
