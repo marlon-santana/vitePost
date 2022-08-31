@@ -59,15 +59,15 @@ const useTimeLineStyle = {
     height:294,
     borderRadius: 8,
 
-    '& img': {
-      boxSizing:'initial',
-      width: 55,
-      height: 55,
-      border:'4px solid var(--gray-800)',
-      marginTop: -30,
-      backgroundColor:'white',
-      borderRadius: 5,
-    }
+    // '& img': {
+    //   boxSizing:'initial',
+    //   width: 55,
+    //   height: 55,
+    //   border:'4px solid var(--gray-800)',
+    //   marginTop: -30,
+    //   backgroundColor:'white',
+    //   borderRadius: 5,
+    // }
   },
 }
 

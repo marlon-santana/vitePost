@@ -1,6 +1,6 @@
 import styles from "./Post.module.css";
 import { Comment } from "./Comment";
-import { Avatar } from "./Avatar";
+import { Avatar } from "../component/Avatar/Avatar";
 import { useState } from "react";
 
 

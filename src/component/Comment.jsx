@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Avatar } from './Avatar';
+import { Avatar } from "../component/Avatar/Avatar";
 import styles from './comment.module.css';
 
 

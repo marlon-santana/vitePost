@@ -3,9 +3,6 @@ import Styles from './styles';
 
 
 
-
-
-
 export function AssideBar() {
   const timeLineStyle = Styles.useTimeLineStyle;
   return ( 
