@@ -1,4 +1,4 @@
-import { AssideBar } from "./component/AssideBar";
+import  {AssideBar } from "./component/AssideBar/index.jsx";
 import { Header } from "./component/Header";
 import { Post } from "./component/Post";
 import "./global.css";
@@ -46,10 +46,8 @@ export function App() {
   return (
     <div>
       <Header />
-
       <div className={styles.wrapper}>
        <AssideBar/>
-
         <main>
           {
             post.map(post => {
